@@ -65,4 +65,10 @@ class User extends Authenticatable
     public function transactions(){
         return $this->hasMany(Transaction::class,'user_id','id');
     }
+    public function tips(){
+        return $this->hasMany(Tip::class,'user_id','id');
+    }
+    public function biodatas(){
+        return $this->hasOne(Biodatas::class,'user_id', 'id');
+    }
 }
