@@ -66,6 +66,7 @@
             @endforeach
         </tbody>
       </table>
+      {{$category->links("pagination::bootstrap-4")}}
     </div>
     <!-- /.card-body -->
   </div>

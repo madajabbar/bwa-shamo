@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class AnswerController extends Controller
 {
     public function index() {
-        $answer = Answer::all();
+        $answer = Answer::orderBy('id', 'DESC')->paginate(10);
         $category = Category::all();
 
         return view('admin.answer',compact('answer','category'));

@@ -75,6 +75,7 @@
             @endforeach
         </tbody>
       </table>
+      {{$answer->links("pagination::bootstrap-4")}}
     </div>
     <!-- /.card-body -->
   </div>

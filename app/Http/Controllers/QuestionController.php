@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class QuestionController extends Controller
 {
     public function index() {
-        $question = Question::paginate(10);
+        $question = Question::orderBy('id', 'DESC')->paginate(10);
         $category = Category::all();
         return view('admin.question', compact('question','category'));
     }
