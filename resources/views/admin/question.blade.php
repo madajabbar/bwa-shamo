@@ -81,7 +81,6 @@
             @endforeach
         </tbody>
       </table>
-      {{$question->links("pagination::bootstrap-4")}}
     </div>
     <!-- /.card-body -->
   </div>
@@ -113,7 +112,7 @@
           </div>
       <!-- /.card-body -->
       <div class="card-footer">
-        <button type="submit" class="btn btn-primary"  >Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
   </div>
